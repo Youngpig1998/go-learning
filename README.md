@@ -4,13 +4,8 @@
 
 | Topics | Source Code |
 | ------ | ----------- |
-|        |             |
-| ------------------------ | ------------- |
-| ------------------------ | ------------- |
-|                          |               |
-| Packages              | [get-bili    |
-| --------------------- | ------------ |
-| Array, Slice, and Map | [array-study |
+| Packages              | [get-bili](./getbili) |
+| Array, Slice, and Map | [array-study](./array-study) |
 
 
 
