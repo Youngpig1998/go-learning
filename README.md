@@ -4,7 +4,7 @@
 
 | Topics | Source Code |
 | ------ | ----------- |
-| Packages              | [get-bili](./getbili) |
+| Packages              | [get-bili](./get-bili) |
 | Array, Slice, and Map | [array-study](./array-study) |
 
 
