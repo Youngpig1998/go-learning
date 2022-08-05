@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //Modify a slice
 func modifySlice(slice []int) {
@@ -20,11 +22,14 @@ func main() {
 	array2 := [...]string{"ni", "hao"}
 
 	array3 := array
+	sliceForArray1 := array[:]
 	array3[0] = "changed"
 
 	fmt.Println(array)
 	fmt.Println(array2)
 	fmt.Println(array3)
+	fmt.Print("sliceForArray1 is a slice. ")
+	fmt.Println(sliceForArray1)
 
 	//Slice(point,length,capacity)
 	slice := []string{"hello", "world", "whatever", "sdwd", "Tseng"}
@@ -73,4 +78,51 @@ func main() {
 		fmt.Printf("Key: %s \t Value: %d \n", key, value)
 	}
 
+	TestAccessNotExistingKey()
+
+	TestMapWithFunValue()
+
+	TestMapForSet()
+}
+
+
+func TestAccessNotExistingKey() {
+	m1 := map[int]int{}
+	fmt.Println(m1[1])
+	m1[2] = 0
+	fmt.Println(m1[2])
+	m1[3] = 0
+	if v, ok := m1[3]; ok {
+		fmt.Printf("Key 3's value is %d", v)
+	} else {
+		fmt.Println("key 3 is not existing.")
+	}
+}
+
+func TestMapWithFunValue() {
+	m := map[int]func(op int) int{}
+	m[1] = func(op int) int { return op }
+	m[2] = func(op int) int { return op * op }
+	m[3] = func(op int) int { return op * op * op }
+	fmt.Println(m[1](2), m[2](2), m[3](2))
+}
+
+func TestMapForSet() {
+	mySet := map[int]bool{}
+	mySet[1] = true
+	n := 3
+	if mySet[n] {
+		fmt.Printf("%d is existing\n", n)
+	} else {
+		fmt.Printf("%d is not existing\n", n)
+	}
+	mySet[3] = true
+	fmt.Println(len(mySet))
+	delete(mySet, 1)
+	n = 1
+	if mySet[n] {
+		fmt.Printf("%d is existing\n", n)
+	} else {
+		fmt.Printf("%d is not existing\n", n)
+	}
 }
