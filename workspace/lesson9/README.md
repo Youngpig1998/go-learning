@@ -83,7 +83,7 @@
 
 ## 切片的使用
 
-切片访问：对切片的访问，类似数组一样，可以用下标索引或者range迭代的方式进行。可以参考[lesson8](./workspace/lesson8)和[lesson14](./workspace/lesson14)
+切片访问：对切片的访问，类似数组一样，可以用下标索引或者range迭代的方式进行。可以参考[lesson8](./workspace/lesson8)和[lesson11](./workspace/lesson11)
 
 ```go
 package main
@@ -265,5 +265,5 @@ func main() {
 
 ## 切片的底层原理
 
-1. [Go Quiz: 从Go面试题看slice的底层原理和注意事项](https://github.com/jincheng9/go-tutorial/blob/main/workspace/senior/p8)
+1. [Go Quiz: 从Go面试题看slice的底层原理和注意事项](../senior/p2)
 2. [Go Quiz: 从Go面试题搞懂slice range遍历的坑](https://github.com/jincheng9/go-tutorial/blob/main/workspace/senior/p13)

@@ -4,7 +4,7 @@
 
 ## 基础篇
 
-* [lesson1: Go程序结构](./workspace/ch1)
+* [lesson1: Go程序结构](./workspace/lesson1)
 
 * [lesson2: 变量与常量](./workspace/lesson2)
 
@@ -22,6 +22,14 @@
 
 * [lesson9: 切片Slice](./workspace/lesson9)
 
+* [lesson10: 映射Map](./workspace/lesson10)
+
+* [lesson11: range迭代](./workspace/lesson11)
+
+* [lesson12: 字符串String](./workspace/lesson12)
+
+* [lesson13: 函数，闭包和方法](./workspace/lesson13)
+
   
 
 
@@ -29,6 +37,12 @@
 
 * 语言基础
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
+
+
+
+## Go Quiz
+
+1. [Go Quiz: 从Go面试题看slice的底层原理和注意事项](./workspace/senior/p2)
 
 
 
@@ -58,49 +72,6 @@
 * [码农桃花源-qcrao91.gitbook.io](https://qcrao91.gitbook.io/go/)
 * [Go语言高性能编程-geektutu](https://geektutu.com/post/hpg-benchmark.html)
 * [Go Under The Hood-golang.design](https://golang.design/under-the-hood/)
-* [英文Go书籍list](https://github.com/dariubs/GoBooks)
-
-
-
-## Go Blog
-
-* [Jincheng's Blog](https://jincheng9.github.io/)
-* [Russ Cox-Go团队负责人](https://research.swtch.com/)
-* [Go Documentation](https://go.dev/doc/)
-* [Golang GitHub Wiki](https://github.com/golang/go/wiki)
-* [Go By Example](https://gobyexample.com/)
-* [Golang By Example](https://golangbyexample.com/)
-* [CS Professor Nilsson from KTH](https://yourbasic.org/golang/)
-* [John Arundel](https://bitfieldconsulting.com/)
-* [Dave Cheney](https://dave.cheney.net/)
-* [Jaana Dogan-Pricipal Engineer at AWS](https://rakyll.org/about/)
-* [go101.org](https://go101.org/article/101.html)
-* [Valentin Deleplace-Google Engineer](https://medium.com/@val_deleplace)
-* [Jay Conrod-Ex Google Go Team Member](https://jayconrod.com/posts)
-* [Medium: A Journey with Go](https://medium.com/a-journey-with-go)
-* [Teiva Harsanyi-100 Go Mistakes author](https://teivah.medium.com/)
-* [Carl M. Johnson.net-Tech Director of Spotlight PA](https://carlmjohnson.net/)
-* [Alex Edwards-A full stack Web Developer](https://www.alexedwards.net/blog)
-* [golang.design](https://golang.design/)
-* [Amit Saha-Atlassian Engineer](https://echorand.me/)
-* [Paschalis Tsilias-Grafana Engineer](https://tpaschalis.github.io/)
-* [liwenzhou-李文周](https://www.liwenzhou.com/)
-* [TalkGo发起人-杨文](https://maiyang.me/)
-* [smallest-rpcx作者](https://colobu.com/)
-* [ChangkunOu-欧长坤](https://changkun.de/blog/)
-* [chai2010-柴树杉](https://chai2010.cn/about/)
-* [cch123-曹春晖](https://xargin.com/)
-* [halfrost-Dezhi Yu](https://halfrost.com/)
-* [draveness-左书祺](https://draveness.me/)
-* [unknwon-无闻](https://unknwon.io/)
-* [strikefreedom-Andy Pan](https://strikefreedom.top/)
-* [qcrao-码农桃花源](https://qcrao.com/)
-* [geektutu-极客兔兔](https://geektutu.com/)
-* [topgoer.com](https://www.topgoer.com/)
-* [topgoer.cn](https://topgoer.cn/)
-* [涛叔-taoshu.in](https://taoshu.in/)
-* [jianyu chen](https://eddycjy.com/)
-* [Zhiyun Luo-Tencent IEG Developer](https://www.luozhiyun.com/)
 
 
 
