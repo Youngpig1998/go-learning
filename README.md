@@ -30,10 +30,20 @@
 
 * [lesson13: 函数，闭包和方法](./workspace/lesson13)
 
+* [lesson14: 变量作用域](./workspace/lesson14)
+
+* [lesson15: defer语义](./workspace/lesson15)
+
+* [lesson16: 结构体struct](./workspace/lesson16)
+
+* [lesson17: 接口interface](./workspace/lesson17)
+
   
 
-
 ## 进阶篇
+
+- 常用关键字
+  - [被defer的函数一定会执行么？](./workspace/senior/p3)
 
 * 语言基础
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
@@ -43,6 +53,7 @@
 ## Go Quiz
 
 1. [Go Quiz: 从Go面试题看slice的底层原理和注意事项](./workspace/senior/p2)
+2. [Go Quiz: 从Go面试题搞懂slice range遍历的坑](./workspace/senior/p4)
 
 
 

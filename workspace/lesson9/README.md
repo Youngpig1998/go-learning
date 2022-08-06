@@ -266,4 +266,4 @@ func main() {
 ## 切片的底层原理
 
 1. [Go Quiz: 从Go面试题看slice的底层原理和注意事项](../senior/p2)
-2. [Go Quiz: 从Go面试题搞懂slice range遍历的坑](https://github.com/jincheng9/go-tutorial/blob/main/workspace/senior/p13)
+2. [Go Quiz: 从Go面试题搞懂slice range遍历的坑](../senior/p4)

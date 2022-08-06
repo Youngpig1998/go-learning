@@ -38,6 +38,8 @@ func player(name string, ch chan int) {
 		ball++
 		fmt.Printf("%s receives ball %d\n", name, ball)
 		ch <- ball
+
+		
 	}
 }
 
