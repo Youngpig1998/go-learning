@@ -38,6 +38,8 @@
 
 * [lesson17: 接口interface](./workspace/lesson17)
 
+* [lesson18: 协程goroutine和管道channel](./workspace/lesson18)
+
   
 
 ## 进阶篇
@@ -47,6 +49,13 @@
 
 * 语言基础
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
+  * [一文读懂Go空结构体及其使用场景](./workspace/senior/p5)
+
+
+
+## 最佳实践
+
+[stop channel](./workspace/senior/p6)
 
 
 
