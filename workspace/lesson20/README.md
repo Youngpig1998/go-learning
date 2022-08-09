@@ -59,6 +59,8 @@ func main() {
 
 ## sync.Once实现并发安全的单例
 
+可参考设计模式中的[单例模式](../senior/p9)
+
 ```go
 package main
 

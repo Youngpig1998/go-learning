@@ -65,7 +65,10 @@
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
   * [一文读懂Go空结构体及其使用场景](./workspace/senior/p5)
 * 设计模式
-  * [函数式选项模式](./workspace/senior/p8)
+  * Idioms
+    * [Functional Options](./workspace/senior/p8)
+  * Creational Patterns
+    * [Singleton](./workspace/senior/p9)
 
 
 
