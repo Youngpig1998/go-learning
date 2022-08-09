@@ -40,6 +40,20 @@
 
 * [lesson18: 协程goroutine和管道channel](./workspace/lesson18)
 
+* [lesson19: 并发编程之sync.WaitGroup](./workspace/lesson19)
+
+* [lesson20:  并发编程之sync.Once](./workspace/lesson20)
+
+* [lesson21:  并发编程之sync.Mutex和sync.RWMutex](./workspace/lesson21)
+
+* [lesson22: 并发编程之sync.Cond](./workspace/lesson22)
+
+* [lesson23: 并发编程之sync.Map](./workspace/lesson23)
+
+* [lesson24: 并发编程之原子操作sync/atomic](./workspace/lesson24)
+
+* [lesson25: 包Package和模块Module](./workspace/lesson25)
+
   
 
 ## 进阶篇
@@ -50,12 +64,15 @@
 * 语言基础
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
   * [一文读懂Go空结构体及其使用场景](./workspace/senior/p5)
+* 设计模式
+  * [函数式选项模式](./workspace/senior/p8)
 
 
 
 ## 最佳实践
 
-[stop channel](./workspace/senior/p6)
+- [stop channel](./workspace/senior/p6)
+- [functional函数集合](./workspace/senior/p7)
 
 
 
@@ -75,11 +92,12 @@
 ### Docker/K8s
 
 * [Docker教程](https://github.com/Youngpig1998/docker-tutorial)
-* [Kubernetes入门教程1: 安装部署Kubernets](https://github.com/Youngpig1998/KuberneteCluster-built)
+* [Kubernetes教程](https://github.com/Youngpig1998/KuberneteCluster-built)
 
 ### Go Operator
 
-
+- [cp4d-audit-webhook-operator](https://github.com/Youngpig1998/cp4d-audit-webhook-operator)
+- [HCA-Operator](https://github.com/Youngpig1998/HCA-Operator)
 
 ## Go Book
 
@@ -100,6 +118,8 @@
 
 * [神奇代码在哪里Go系列](https://space.bilibili.com/1557732/channel/collectiondetail?sid=464543)
 
+* [Go最佳实践](https://space.bilibili.com/1897036286/channel/collectiondetail?sid=569368)
+
   
 
 
@@ -110,5 +130,3 @@
 | buffered channel | [buffered channel](./buffered-channel) |
 
 
-
-# 

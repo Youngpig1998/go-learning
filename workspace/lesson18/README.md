@@ -496,7 +496,6 @@ func main() {
 
 * https://go.dev/doc/faq#closures_and_goroutines
 * https://www.liwenzhou.com/posts/Go/14_concurrence/
-* https://github.com/jincheng9/go-tutorial/tree/main/workspace/senior/p9
 
 
 
