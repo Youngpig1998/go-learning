@@ -68,7 +68,13 @@
   * Idioms
     * [Functional Options](./workspace/senior/p8)
   * Creational Patterns
-    * [Singleton](./workspace/senior/p9)
+    * [Singleton单例模式](./workspace/senior/p9)
+    * [Factory Method & Abstract Factory](./workspace/senior/p10)
+  * Behavioral Patterns
+    * [Strategy](./workspace/senior/p14)
+    * [Template](./workspace/senior/p12)
+  * Structual Patterns
+    * [Proxy](./workspace/senior/p13)
 
 
 
@@ -76,6 +82,7 @@
 
 - [stop channel](./workspace/senior/p6)
 - [functional函数集合](./workspace/senior/p7)
+- [全局变量global](./workspace/senior/p11)
 
 
 
@@ -91,6 +98,7 @@
 ### 代码规范
 
 * [Go语言代码规范](./workspace/style)
+* [Git](./workspace/git)
 
 ### Docker/K8s
 
