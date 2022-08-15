@@ -54,6 +54,16 @@
 
 * [lesson25: 包Package和模块Module](./workspace/lesson25)
 
+* [lesson26: 上下文Context](./workspace/lesson26)
+
+* [lesson27: go单元测试](./workspace/lesson27)
+
+* [lesson28: panic, recover运行期错误处理](./workspace/lesson28)
+
+* [lesson29: select语义](./workspace/lesson29)
+
+* [lesson29: 反射reflection](./workspace/lesson30)
+
   
 
 ## 进阶篇

@@ -189,7 +189,7 @@ range可以用于for循环，对字符串，数组array，切片slice，集合ma
 
 ## range对通道channel进行迭代
 
-对channel进行range迭代，会循环从channel里取数据
+对channel进行range迭代，会循环从channel里取数据。在使用range对channel进行迭代时，要先关闭channel，否则会导致deadlock。
 
 ```go
 package main
