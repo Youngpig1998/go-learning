@@ -1,4 +1,5 @@
 // addressbook.proto
+syntax = "proto2";
 
 package tutorial;  // package声明符
 
