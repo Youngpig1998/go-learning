@@ -196,6 +196,18 @@ Go 1.11开始，有了Go Modules，工程项目可以建在任何地方，代码
 go mod tidy
 ```
 
+**GOMODULE常用命令**
+
+```go
+go mod init  # 初始化go.mod
+go mod tidy  # 更新依赖文件
+go mod download  # 下载依赖文件
+go mod vendor  # 将依赖转移至本地的vendor文件
+go mod edit  # 手动修改依赖文件
+go mod graph  # 打印依赖图
+go mod verify  # 校验依
+```
+
 
 
 ###  开启GO111MODULES时import本地的Module
