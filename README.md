@@ -119,6 +119,14 @@
 * [Docker教程](https://github.com/Youngpig1998/docker-tutorial)
 * [Kubernetes教程](https://github.com/Youngpig1998/KuberneteCluster-built)
 
+### client-go
+
+- [client-go实战之一：准备工作](https://xinchen.blog.csdn.net/article/details/113753087)
+- [client-go实战之二:RESTClient](https://xinchen.blog.csdn.net/article/details/113487087)
+- [client-go实战之三：Clientset](https://xinchen.blog.csdn.net/article/details/113788269)
+- [client-go实战之四：dynamicClient](https://xinchen.blog.csdn.net/article/details/113795523)
+- [client-go实战之五：DiscoveryClient](https://xinchen.blog.csdn.net/article/details/113800054)
+
 ### Go Operator
 
 - [cp4d-audit-webhook-operator](https://github.com/Youngpig1998/cp4d-audit-webhook-operator)
