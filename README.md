@@ -74,6 +74,8 @@
 * 语言基础
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
   * [一文读懂Go空结构体及其使用场景](./workspace/senior/p5)
+  * [一文读懂Go匿名结构体的使用场景](./workspace/senior/p15)
+  * [Go语言中命名函数参数和命名函数返回值的注意事项](./workspace/senior/p16)
 * 设计模式
   * Idioms
     * [Functional Options](./workspace/senior/p8)
@@ -108,6 +110,7 @@
 ### 代码规范
 
 * [Go语言代码规范](./workspace/style)
+* [Go项目目录结构](./workspace/senior/p17)
 * [Git](./workspace/git)
 * [Protobuf](./workspace/protobuf)
 
