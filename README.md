@@ -119,13 +119,7 @@
 * [Docker教程](https://github.com/Youngpig1998/docker-tutorial)
 * [Kubernetes教程](https://github.com/Youngpig1998/KuberneteCluster-built)
 
-### client-go
 
-- [client-go实战之一：准备工作](https://xinchen.blog.csdn.net/article/details/113753087)
-- [client-go实战之二:RESTClient](https://xinchen.blog.csdn.net/article/details/113487087)
-- [client-go实战之三：Clientset](https://xinchen.blog.csdn.net/article/details/113788269)
-- [client-go实战之四：dynamicClient](https://xinchen.blog.csdn.net/article/details/113795523)
-- [client-go实战之五：DiscoveryClient](https://xinchen.blog.csdn.net/article/details/113800054)
 
 ### Go Operator
 
@@ -142,8 +136,6 @@
 * [码农桃花源-qcrao91.gitbook.io](https://qcrao91.gitbook.io/go/)
 * [Go语言高性能编程-geektutu](https://geektutu.com/post/hpg-benchmark.html)
 * [Go Under The Hood-golang.design](https://golang.design/under-the-hood/)
-
-
 
 ## Go Video
 
