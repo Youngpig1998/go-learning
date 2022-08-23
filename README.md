@@ -62,14 +62,18 @@
 
 * [lesson29: select语义](./workspace/lesson29)
 
-* [lesson29: 反射reflection](./workspace/lesson30)
+* [lesson30: 反射reflection](./workspace/lesson30)
+
+* [lesson31: go相关命令](./workspace/lesson31)
 
   
 
 ## 进阶篇
 
 - 常用关键字
+  - [new和make的使用区别和最佳实践是什么？](./workspace/senior/p18)
   - [被defer的函数一定会执行么？](./workspace/senior/p3)
+
 
 * 语言基础
   * [Go有引用变量和引用传递么？map,channel和slice作为函数参数是引用传递么？](./workspace/senior/p1)
@@ -109,10 +113,22 @@
 
 ### 代码规范
 
-* [Go语言代码规范](./workspace/style)
+* [Go编码规范规范](./workspace/style)
 * [Go项目目录结构](./workspace/senior/p17)
-* [Git](./workspace/git)
-* [Protobuf](./workspace/protobuf)
+
+
+
+### Git
+
+[Git使用手册](./workspace/git)
+
+
+
+### Protobuf
+
+[Protobuf](./workspace/protobuf)
+
+
 
 ### Docker/K8s
 
@@ -153,5 +169,4 @@
 |     Packages     |         [get-bili](./get-bili)         |
 |    go routine    |       [go-routine](./go-routine)       |
 | buffered channel | [buffered channel](./buffered-channel) |
-
 
