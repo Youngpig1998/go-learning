@@ -80,6 +80,7 @@
   * [一文读懂Go空结构体及其使用场景](./workspace/senior/p5)
   * [一文读懂Go匿名结构体的使用场景](./workspace/senior/p15)
   * [Go语言中命名函数参数和命名函数返回值的注意事项](./workspace/senior/p16)
+  * [golang协程与线程区别简要介绍](./workspace/senior/p22)
 * 设计模式
   * Idioms
     * [Functional Options](./workspace/senior/p8)
@@ -91,6 +92,12 @@
     * [Template](./workspace/senior/p12)
   * Structual Patterns
     * [Proxy](./workspace/senior/p13)
+
+- Workspace mode工作区模式
+
+  * [Go 1.18：工作区模式workspace mode简介](./workspace/senior/p21)
+
+  * [Go 1.18：工作区模式最佳实践](./workspace/senior/p21/go1.18-workspace-best-practice.md)
 
 
 
@@ -106,6 +113,8 @@
 
 1. [Go Quiz: 从Go面试题看slice的底层原理和注意事项](./workspace/senior/p2)
 2. [Go Quiz: 从Go面试题搞懂slice range遍历的坑](./workspace/senior/p4)
+3. [Go Quiz: 从Go面试题看channel的注意事项](./workspace/senior/p19)
+4. [Go Quiz: 从Go面试题看channel在select场景下的注意事项](./workspace/senior/p20)
 
 
 
