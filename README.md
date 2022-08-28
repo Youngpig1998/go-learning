@@ -144,7 +144,9 @@
 * [Docker教程](https://github.com/Youngpig1998/docker-tutorial)
 * [Kubernetes教程](https://github.com/Youngpig1998/KuberneteCluster-built)
 
+### Prometheus
 
+- [Prometheus教程](https://www.qikqiak.com/k8s-book/docs/52.Prometheus%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html)
 
 ### Go Operator
 
