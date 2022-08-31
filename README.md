@@ -147,6 +147,7 @@
 ### Prometheus
 
 - [Prometheus教程](https://www.qikqiak.com/k8s-book/docs/52.Prometheus%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html)
+- [Prometheus入门实践](./workspace/prometheus)
 
 ### Go Operator
 
