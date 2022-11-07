@@ -51,7 +51,7 @@
 
 　　工作区、版本库中的暂存区和版本库之间的关系的示意图：
 
-![img](C:/Users/Young/Desktop/云计算/git/assets/git1-3.jpg)
+![img](./assets/git1-3.jpg)
 
 - 　　图中左侧为工作区，右侧为版本库。在版本库中标记为 "index" 的区域是暂存区（stage, index），标记为 "master" 的是 master 分支所代表的目录树。 
 
@@ -130,11 +130,11 @@ git cat-file -s  #查看 git 对象的大小
 
 在Git中，有三个最重要的对象，分别是 **commit、 tree 和 blob**。
 
-<img src="C:/Users/Young/Desktop/云计算/git/assets/git1-1.png" alt="img" style="zoom: 50%;" />
+<img src="./assets/git1-1.png" alt="img" style="zoom: 50%;" />
 
 blob是唯一的。即使两个文件的内容一样，它们的blob id也是一样的，这么做的好处是节省了存储空间。
 
-<img src="C:/Users/Young/Desktop/云计算/git/assets/git1-2.png" alt="img" style="zoom: 50%;" />
+<img src="./assets/git1-2.png" alt="img" style="zoom: 50%;" />
 
 ​	一共有4个对象，一个 commit 对象，两个 tree 对象，一个 blob 对象。
 
