@@ -45,9 +45,9 @@
 
 ### 3、Git基本概念
 
-- **工作区：**就是你在电脑里能看到的目录。
-- **暂存区：**英文叫stage, 或index。一般存放在"git目录"下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
-- **版本库：**工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
+- **工作区**：就是你在电脑里能看到的目录。
+- **暂存区**：英文叫stage, 或index。一般存放在"git目录"下的index文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
+- **版本库**：工作区有一个隐藏目录.git，这个不算工作区，而是Git的版本库。
 
 　　工作区、版本库中的暂存区和版本库之间的关系的示意图：
 
@@ -73,7 +73,7 @@
 
 #### 给文件重命名的简便方法
 
-`git mv oldFile newFile`        # 相当于`mv oldFile newFile`、`git add newFile`、`git rm oldFile`三步
+`git mv oldFile newFile`          相当于`mv oldFile newFile`、`git add newFile`、`git rm oldFile`三步
 
 #### 通过`git log`查看版本历史
 
@@ -94,7 +94,7 @@
 [root@qfedu.com ~]# git reset --hard HEAD^        # 回到上一个版本 
 [root@qfedu.com ~]# git reset --hard XXXXX        # XXX为版本编号，回到某一个版本
 [root@qfedu.com ~]# git commit -am'xxx'           # 直接将所有文件添加到暂存区并且提交
-[root@qfedu.com ~]# git remote -v                 # 查看远端仓库分支
+[root@qfedu.com ~]# git remote -v                 # 查看远程版本库
 [root@qfedu.com ~]# git remote add [shortname] [url] #添加远程版本库
 [root@qfedu.com ~]# git pull origin master        # 从主分支pull到本地，远端仓库名为origin 
 [root@qfedu.com ~]# git push -u origin master     # 从本地push到主分支 
@@ -152,7 +152,53 @@ blob是唯一的。即使两个文件的内容一样，它们的blob id也是一
 
 ## 1、怎么删除不需要的分支
 
-​	`git branch -d [branch_name]`:使用-d  在删除前Git会判断在该分支上开发的功能是否被merge的其它分支。如果没有，不能删除。如果merge到其它分支，但之后又在其上做了开发，使用-d还是不能删除。-D会强制删除。用-d 报“error：The branch is not fully merged”，是指这个分支不曾合入到其他任何分支。在日常开发中，我们通常赋予有意义的分支名，Git判断本分支没和任何别的分支合并，意味这删除存在风险。它也提供我们-D的方式，如果确定无风险就用-D 。
+​	查看本地分支：
+
+```shell
+git branch  #前面带有*号的是当前分支
+```
+
+
+​	删除本地已合并的分支或者没有新改动的分支：
+
+```shell
+git branch -d [branchname]
+```
+
+
+​	强行删除分支：
+
+```shell
+git branch -D [branchName]
+```
+
+​	注意：
+​		你是无法删除当前所在的分支的，因此，通常需要先切换到其他分支上：
+
+```shell
+git checkedout [branchName]
+```
+
+​	如果切换的分支已存在，就切换上去，否则就重新创建一个分支并切换上去。
+
+​	在删除前Git会判断在该分支上开发的功能是否被merge的其它分支。如果没有，不能删除。如果merge到其它分支，但之后又在其上做了开发，使用-d还是不能删除。用-d 报“error：The branch is not fully merged”，是指这个分支不曾合入到其他任何分支。在日常开发中，我们通常赋予有意义的分支名，Git判断本分支没和任何别的分支合并，意味这删除存在风险。它也提供我们-D的方式，如果确定无风险就用-D 。
+
+### GitHub删除远程分支
+
+​	远程分支就是GitHub上创建的分支。删除远程分支其实是用push。
+​	**注意：删除远程分支并不会删除本地分支**
+
+```shell
+git push origin --delete [branchname]
+```
+
+清理本地无效分支(远程已删除本地没删除的分支):
+
+```shell
+git fetch -p
+```
+
+参考：[Git分支的意义和使用方](https://blog.csdn.net/qq_27674439/article/details/107412097)
 
 ## 2、怎么修改最新commit的message
 
@@ -166,7 +212,7 @@ blob是唯一的。即使两个文件的内容一样，它们的blob id也是一
 
 ​	可以看到修改了老message后，自父亲commit以下，所有commit都变了。blob是只看内容的，两个文件如果内容相同，对应的blob是相同的，即使这俩文件在不同的git仓库。 但commit还包括commit的message，作者，变更时间，父亲等属性，这些中的一个发生变化了，在git眼里就是不同的commit。 如果前3个commit的message变了，前3个commit就变了，它一变，前2个commit的parent就变了，因此前2个commit也要变，依此类推。
 
-​	git rebase工作的过程中，就是用了分离头指针。rebase意味着基于新base的commit来变更部分commits。它处理的时候，把HEAD指向base的commit，此时如果该commit没有对应branch，就处于分离头指针的状态，然后重新一个一个生成新的commit，当rebase创建完最后一个commit后，结束分离头状态，Git让变完基的分支名指向HEAD。
+​	git rebase工作的过程中，就是用了分离头指针。rebase意味着基于新base的commit来变更部分commits。它处理的时候，把HEAD指向base的commit，此时如果该commit没有对应branch，就处于分离头指针的状态，然后重新一个一个生成新的commit，当rebase创建完最后一个commit后，结束分离头状态，Git让HEAD指向变完基的分支名。
 
 ​	**那如果要更改的是第一次提交，执行 `git rebase -i --root` 即可**
 
@@ -179,6 +225,13 @@ blob是唯一的。即使两个文件的内容一样，它们的blob id也是一
 3. 在新的页面最前面输入我们新的commit message
 
 ## 5、怎样把间隔的多个commit整理成1个
+
+​	把间隔的多个 Commit 合并为 1 个：
+
+1. git rebase -i parent_commitId
+2. 将需要合并的commit移到需要合并到的commit的下一行，并且将"pick"改为"squash"，表示需要和前一行的commit合并。保存
+3. 执行`git rebase --continue`
+4. 在新的页面最前面输入我们新的commit message
 
 ## 6、怎么比较暂存区和HEAD所含文件的差异
 
@@ -231,6 +284,8 @@ blob是唯一的。即使两个文件的内容一样，它们的blob id也是一
 
 ​	参考：[Git stash命令详解和使用](https://blog.csdn.net/qq_38425719/article/details/107792754)
 
+​	使用`git stash pop`时，可以指定选择任意一个进行pop，不是一定要按照入stash的顺序进行pop。
+
 ## 15、如何指定不需要git管理的文件
 
 ​	.gitignore之前， 要保证仓库中没有这个文件。
@@ -242,8 +297,6 @@ blob是唯一的。即使两个文件的内容一样，它们的blob id也是一
 ## 16、如何将Git仓库备份到本地
 
 ​	参考：[Git小技巧——git的bare裸库命令操作——一看就会](https://blog.csdn.net/u013541707/article/details/107482045?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-107482045-blog-81743626.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-107482045-blog-81743626.pc_relevant_aa&utm_relevant_index=1)	
-
-​			[git仓库的bare方式](https://blog.csdn.net/chenzhengfeng/article/details/81743626)
 
 ​	本地有哑协议和智能协议，使用方法如下：
 
@@ -313,12 +366,6 @@ blob是唯一的。即使两个文件的内容一样，它们的blob id也是一
 
 
 
-
-
-
-
-
-
 # 附录
 
 ## 正常的git提交流程
@@ -352,62 +399,6 @@ git push origin [branchName]
 ```
 git push origin localBranchName:remoteBranchName
 ```
-
-
-
-## Git分支的意义和使用方法
-
-https://blog.csdn.net/qq_27674439/article/details/107412097
-
-## Git删除本地分支
-
-​	查看本地分支：
-
-```shell
-git branch  #前面带有*号的是当前分支
-```
-
-
-​	删除本地已合并的分支或者没有新改动的分支：
-
-```shell
-git branch -d [branchname]
-```
-
-
-​	强行删除分支：
-
-```shell
-git branch -D [branchName]
-```
-
-​	注意：
-​		你是无法删除当前所在的分支的，因此，通常需要先切换到其他分支上：
-
-```shell
-git checkedout [branchName]
-```
-
-​		如果切换的分支已存在，就切换上去，否则就重新创建一个分支并切换上去
-
-
-
-## GitHub删除远程分支
-
-​	远程分支就是GitHub上创建的分支。删除远程分支其实是用push。
-​	**注意：删除远程分支并不会删除本地分支**
-
-```shell
-git push origin --delete [branchname]
-```
-
-清理本地无效分支(远程已删除本地没删除的分支):
-
-```shell
-git fetch -p
-```
-
-
 
 
 
@@ -447,8 +438,6 @@ git tag v0.9 6df3aa614a45e687697a628a9174106822f79bfc
 git show testtag
 
 ```
-
-
 
 
 
