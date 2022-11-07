@@ -92,6 +92,7 @@
     * [Template](./workspace/senior/p12)
   * Structual Patterns
     * [Proxy](./workspace/senior/p13)
+* [leetcode刷题](./workspace/leetcode)
 
 - Workspace mode工作区模式
 
@@ -125,7 +126,9 @@
 * [Go编码规范规范](./workspace/style)
 * [Go项目目录结构](./workspace/senior/p17)
 
+### 算法
 
+- [数据结构与算法实战](./workspace/argo-master)
 
 ### Git
 
