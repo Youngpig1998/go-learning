@@ -11,7 +11,7 @@ func main() {
 		println("index=", index, "value=", value)
 	}
 
-	var list []int = []int{1,2}
+	var list []int = []int{1, 2}
 	for index, value := range list {
 		println("index=", index, "value=", value)
 	}
@@ -20,8 +20,9 @@ func main() {
 		println("index=", index, "value=", value)
 	}
 
-	dict := map[string] int{"a":1, "b":2}
+	dict := map[string]int{"a": 1, "b": 2}
 	for key, value := range dict {
 		println("key=", key, "value=", value)
 	}
+
 }
